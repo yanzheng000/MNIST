@@ -106,5 +106,5 @@ for step in np.arange(RUN):
 test_labels = np.argmax(tep.eval(session=session), axis=1)
 
 submission = pd.DataFrame(data={'ImageId':(np.arange(test_labels.shape[0])+1), 'Label':test_labels})
-submission.to_csv('result.csv', index=False)
+submission.to_csv('temp_result.csv', index=False)
 submission.head()
