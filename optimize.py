@@ -42,4 +42,4 @@ def write(outFile,dir1,dir2):
         for key, value in sorted_data.items():
             writer.writerow({dir1: key, dir2: int(value)})
 
-merge('/Users/yanzheng/Desktop/optimize test','output.csv','ImageId','Label')
+merge('/Users/yanzheng/Desktop/optimize test','final_result.csv','ImageId','Label')
